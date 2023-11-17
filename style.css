@@ -141,3 +141,66 @@ button:hover {
   background-color: rgba(0, 0, 139, 0.1);
   color: darkblue;
 }
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .result {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+    gap: 5px;
+    position: relative;
+    z-index: 2;
+  }
+  .result-point {
+    width: 30%;
+    height: 60%;
+    padding: 10px;
+  }
+  .summary {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    top: -15px;
+  }
+  .summary-title {
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  .summary-detail {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+  }
+  footer {
+    margin-top: 10px;
+  }
+}
