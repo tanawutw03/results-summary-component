@@ -118,6 +118,12 @@ button {
   border-radius: 25px;
   left: 60px;
 }
+button:active {
+  background-color: blue;
+}
+button:hover {
+  cursor: pointer;
+}
 
 .reaction {
   background-color: rgba(200, 20, 60, 0.1);
